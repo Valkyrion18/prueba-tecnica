@@ -106,7 +106,6 @@ const Home = () => {
             </Container>
 
             <Container className='mt-5'>
-                <h5>INGREDIENTES</h5>
                 <h2 className='mt-4 mb-4 d-flex justify-content-center'>{plato}</h2>
             </Container>
 
@@ -128,7 +127,7 @@ const Home = () => {
                     ingredientes.map((ingrediente, index) => (
                         <Container
                             key={index}
-                            className="product-container mb-2">
+                            className="product-container mb-4">
                             <Container className="input-checkbox">
                                 <input type="checkbox"
                                     ref={reference}
@@ -170,7 +169,7 @@ const Home = () => {
                     }
                 </Container>
                 <Container className="bottom-data">
-                    <h5 >Gastos de Envio:</h5>
+                    <h5 >Gastos de Envío:</h5>
                     {
                         subTotal <= 0 ?
                             <h5 className="item-visibility">{divisa} {envio}</h5>
