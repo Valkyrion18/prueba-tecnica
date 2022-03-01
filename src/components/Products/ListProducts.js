@@ -14,13 +14,6 @@ export const ListProducts = () => {
 
     const { products } = useSelector(store => store.products);
 
-    // const handleClose = () => setShow(false);
-    // const handleShow = (titulo) => {
-    //     setShow(true);
-    //     setChooseList(movies.find(movie => movie.titulo === titulo))
-    //     console.log(movies.find(movie => movie.titulo === titulo))
-    // }
-
     const updateModal = (nombre) => {
         const buscado = products.find((element) => element.product === nombre)
 
